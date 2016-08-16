@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1A94714951E9E14BD61E66 /* libPods-fuliba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E06A8F81B64CAA7CFC32ED /* libPods-fuliba.a */; };
+		F5613C001D60080D0089EA24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613BFF1D60080D0089EA24 /* main.m */; };
+		F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C021D60080D0089EA24 /* AppDelegate.m */; };
+		F5613C061D60080D0089EA24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C051D60080D0089EA24 /* ViewController.m */; };
+		F5613C091D60080D0089EA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C071D60080D0089EA24 /* Main.storyboard */; };
+		F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0A1D60080D0089EA24 /* Assets.xcassets */; };
+		F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E0992D0D65563B9BFD820DD /* Pods-fuliba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuliba.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fuliba/Pods-fuliba.debug.xcconfig"; sourceTree = "<group>"; };
+		68E06A8F81B64CAA7CFC32ED /* libPods-fuliba.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fuliba.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDC84A3BB53020DB24426A3 /* Pods-fuliba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuliba.release.xcconfig"; path = "Pods/Target Support Files/Pods-fuliba/Pods-fuliba.release.xcconfig"; sourceTree = "<group>"; };
+		F5613BFB1D60080D0089EA24 /* fuliba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fuliba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5613BFF1D60080D0089EA24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5613C011D60080D0089EA24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5613C021D60080D0089EA24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5613C041D60080D0089EA24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5613C051D60080D0089EA24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5613C081D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5613C0A1D60080D0089EA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5613C0D1D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5613C0F1D60080D0089EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5613BF81D60080D0089EA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1A94714951E9E14BD61E66 /* libPods-fuliba.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B306DE07D06992A73F9CF831 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E0992D0D65563B9BFD820DD /* Pods-fuliba.debug.xcconfig */,
+				ABDC84A3BB53020DB24426A3 /* Pods-fuliba.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC410E78B9CF1A02507F5795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68E06A8F81B64CAA7CFC32ED /* libPods-fuliba.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5613BF21D60080D0089EA24 = {
+			isa = PBXGroup;
+			children = (
+				F5613BFD1D60080D0089EA24 /* fuliba */,
+				F5613BFC1D60080D0089EA24 /* Products */,
+				B306DE07D06992A73F9CF831 /* Pods */,
+				CC410E78B9CF1A02507F5795 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5613BFC1D60080D0089EA24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5613BFB1D60080D0089EA24 /* fuliba.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5613BFD1D60080D0089EA24 /* fuliba */ = {
+			isa = PBXGroup;
+			children = (
+				F5613C011D60080D0089EA24 /* AppDelegate.h */,
+				F5613C021D60080D0089EA24 /* AppDelegate.m */,
+				F5613C041D60080D0089EA24 /* ViewController.h */,
+				F5613C051D60080D0089EA24 /* ViewController.m */,
+				F5613C071D60080D0089EA24 /* Main.storyboard */,
+				F5613C0A1D60080D0089EA24 /* Assets.xcassets */,
+				F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */,
+				F5613C0F1D60080D0089EA24 /* Info.plist */,
+				F5613BFE1D60080D0089EA24 /* Supporting Files */,
+			);
+			path = fuliba;
+			sourceTree = "<group>";
+		};
+		F5613BFE1D60080D0089EA24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5613BFF1D60080D0089EA24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5613BFA1D60080D0089EA24 /* fuliba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5613C121D60080D0089EA24 /* Build configuration list for PBXNativeTarget "fuliba" */;
+			buildPhases = (
+				03D691A7696D27C1BEBD53F4 /* [CP] Check Pods Manifest.lock */,
+				F5613BF71D60080D0089EA24 /* Sources */,
+				F5613BF81D60080D0089EA24 /* Frameworks */,
+				F5613BF91D60080D0089EA24 /* Resources */,
+				30BB783271EA53E3BB86804B /* [CP] Embed Pods Frameworks */,
+				0A54C4B9034C1D61C3906D54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fuliba;
+			productName = fuliba;
+			productReference = F5613BFB1D60080D0089EA24 /* fuliba.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5613BF31D60080D0089EA24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = fuliba;
+				TargetAttributes = {
+					F5613BFA1D60080D0089EA24 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F5613BF61D60080D0089EA24 /* Build configuration list for PBXProject "fuliba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5613BF21D60080D0089EA24;
+			productRefGroup = F5613BFC1D60080D0089EA24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5613BFA1D60080D0089EA24 /* fuliba */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5613BF91D60080D0089EA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */,
+				F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */,
+				F5613C091D60080D0089EA24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D691A7696D27C1BEBD53F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0A54C4B9034C1D61C3906D54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fuliba/Pods-fuliba-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30BB783271EA53E3BB86804B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fuliba/Pods-fuliba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5613BF71D60080D0089EA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5613C061D60080D0089EA24 /* ViewController.m in Sources */,
+				F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */,
+				F5613C001D60080D0089EA24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5613C071D60080D0089EA24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5613C081D60080D0089EA24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5613C0D1D60080D0089EA24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5613C101D60080D0089EA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5613C111D60080D0089EA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5613C131D60080D0089EA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E0992D0D65563B9BFD820DD /* Pods-fuliba.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fuliba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5613C141D60080D0089EA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABDC84A3BB53020DB24426A3 /* Pods-fuliba.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fuliba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5613BF61D60080D0089EA24 /* Build configuration list for PBXProject "fuliba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5613C101D60080D0089EA24 /* Debug */,
+				F5613C111D60080D0089EA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5613C121D60080D0089EA24 /* Build configuration list for PBXNativeTarget "fuliba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5613C131D60080D0089EA24 /* Debug */,
+				F5613C141D60080D0089EA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5613BF31D60080D0089EA24 /* Project object */;
+}
