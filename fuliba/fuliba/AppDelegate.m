@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FLBTabBarViewController.h"
+#import "FLBBaseModel.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-
+    //初始化数据库
+    [FLBBaseModel shareDataBase];
     FLBTabBarViewController *mainTabbar =[[FLBTabBarViewController alloc]init];
     self.window.rootViewController =mainTabbar;
     return YES;

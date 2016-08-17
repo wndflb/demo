@@ -7,11 +7,12 @@
 //
 
 #import "FLBTabBarViewController.h"
-#import "FLBDefine.h"
+
 #import "FLBMyViewController.h"
 #import "FLBForumViewController.h"
 #import "FLBCollectViewController.h"
 #import "FLBMessageViewController.h"
+
 #import "FLBNavigationController.h"
 
 @interface FLBTabBarViewController ()<UITabBarDelegate>
