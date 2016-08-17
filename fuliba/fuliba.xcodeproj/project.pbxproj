@@ -10,10 +10,16 @@
 		8C1A94714951E9E14BD61E66 /* libPods-fuliba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E06A8F81B64CAA7CFC32ED /* libPods-fuliba.a */; };
 		F5613C001D60080D0089EA24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613BFF1D60080D0089EA24 /* main.m */; };
 		F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C021D60080D0089EA24 /* AppDelegate.m */; };
-		F5613C061D60080D0089EA24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C051D60080D0089EA24 /* ViewController.m */; };
-		F5613C091D60080D0089EA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C071D60080D0089EA24 /* Main.storyboard */; };
 		F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0A1D60080D0089EA24 /* Assets.xcassets */; };
 		F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */; };
+		F5A5AAD91D64475500FF3209 /* FLBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */; };
+		F5A5AADC1D64482400FF3209 /* FLBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AADB1D64482400FF3209 /* FLBBaseViewController.m */; };
+		F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AADE1D64483800FF3209 /* FLBMyViewController.m */; };
+		F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAE11D64484B00FF3209 /* FLBForumViewController.m */; };
+		F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAE41D64485A00FF3209 /* FLBMessageViewController.m */; };
+		F5A5AAE81D64487000FF3209 /* FLBCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAE71D64487000FF3209 /* FLBCollectViewController.m */; };
+		F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAED1D644B5000FF3209 /* FLBNavigationController.m */; };
+		F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5B2A11D645038002E70FB /* FLBLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +30,27 @@
 		F5613BFF1D60080D0089EA24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5613C011D60080D0089EA24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5613C021D60080D0089EA24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5613C041D60080D0089EA24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5613C051D60080D0089EA24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F5613C081D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5613C0A1D60080D0089EA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5613C0D1D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5613C0F1D60080D0089EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A5AAD71D64475500FF3209 /* FLBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBTabBarViewController.h; sourceTree = "<group>"; };
+		F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBTabBarViewController.m; sourceTree = "<group>"; };
+		F5A5AADA1D64482400FF3209 /* FLBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBaseViewController.h; sourceTree = "<group>"; };
+		F5A5AADB1D64482400FF3209 /* FLBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBaseViewController.m; sourceTree = "<group>"; };
+		F5A5AADD1D64483800FF3209 /* FLBMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBMyViewController.h; sourceTree = "<group>"; };
+		F5A5AADE1D64483800FF3209 /* FLBMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBMyViewController.m; sourceTree = "<group>"; };
+		F5A5AAE01D64484B00FF3209 /* FLBForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBForumViewController.h; sourceTree = "<group>"; };
+		F5A5AAE11D64484B00FF3209 /* FLBForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBForumViewController.m; sourceTree = "<group>"; };
+		F5A5AAE31D64485A00FF3209 /* FLBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBMessageViewController.h; sourceTree = "<group>"; };
+		F5A5AAE41D64485A00FF3209 /* FLBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBMessageViewController.m; sourceTree = "<group>"; };
+		F5A5AAE61D64487000FF3209 /* FLBCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBCollectViewController.h; sourceTree = "<group>"; };
+		F5A5AAE71D64487000FF3209 /* FLBCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBCollectViewController.m; sourceTree = "<group>"; };
+		F5A5AAEA1D6448FD00FF3209 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5A5AAEB1D64494C00FF3209 /* FLBDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBDefine.h; sourceTree = "<group>"; };
+		F5A5AAEC1D644B5000FF3209 /* FLBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBNavigationController.h; sourceTree = "<group>"; };
+		F5A5AAED1D644B5000FF3209 /* FLBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBNavigationController.m; sourceTree = "<group>"; };
+		F5A5B2A01D645038002E70FB /* FLBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBLoginViewController.h; sourceTree = "<group>"; };
+		F5A5B2A11D645038002E70FB /* FLBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,15 +103,19 @@
 		F5613BFD1D60080D0089EA24 /* fuliba */ = {
 			isa = PBXGroup;
 			children = (
+				F5A5B29C1D645026002E70FB /* LoginVewController */,
+				F5A5AAD31D6446FF00FF3209 /* CollectVewController */,
+				F5A5AACF1D6446E000FF3209 /* MessageVewController */,
+				F5A5AACB1D6446B700FF3209 /* ForumVewController */,
+				F5A5AAC71D64467300FF3209 /* MyVewController */,
+				F5A5AAC61D64465000FF3209 /* Common */,
 				F5613C011D60080D0089EA24 /* AppDelegate.h */,
 				F5613C021D60080D0089EA24 /* AppDelegate.m */,
-				F5613C041D60080D0089EA24 /* ViewController.h */,
-				F5613C051D60080D0089EA24 /* ViewController.m */,
-				F5613C071D60080D0089EA24 /* Main.storyboard */,
 				F5613C0A1D60080D0089EA24 /* Assets.xcassets */,
 				F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */,
 				F5613C0F1D60080D0089EA24 /* Info.plist */,
 				F5613BFE1D60080D0089EA24 /* Supporting Files */,
+				F5A5AAEA1D6448FD00FF3209 /* PrefixHeader.pch */,
 			);
 			path = fuliba;
 			sourceTree = "<group>";
@@ -101,6 +126,185 @@
 				F5613BFF1D60080D0089EA24 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5A5AAC61D64465000FF3209 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAD71D64475500FF3209 /* FLBTabBarViewController.h */,
+				F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */,
+				F5A5AADA1D64482400FF3209 /* FLBBaseViewController.h */,
+				F5A5AADB1D64482400FF3209 /* FLBBaseViewController.m */,
+				F5A5AAEB1D64494C00FF3209 /* FLBDefine.h */,
+				F5A5AAEC1D644B5000FF3209 /* FLBNavigationController.h */,
+				F5A5AAED1D644B5000FF3209 /* FLBNavigationController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F5A5AAC71D64467300FF3209 /* MyVewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAC81D64467300FF3209 /* Model */,
+				F5A5AAC91D64467300FF3209 /* View */,
+				F5A5AACA1D64467300FF3209 /* ViewController */,
+			);
+			path = MyVewController;
+			sourceTree = "<group>";
+		};
+		F5A5AAC81D64467300FF3209 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A5AAC91D64467300FF3209 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A5AACA1D64467300FF3209 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AADD1D64483800FF3209 /* FLBMyViewController.h */,
+				F5A5AADE1D64483800FF3209 /* FLBMyViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5A5AACB1D6446B700FF3209 /* ForumVewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AACC1D6446B700FF3209 /* Model */,
+				F5A5AACD1D6446B700FF3209 /* View */,
+				F5A5AACE1D6446B700FF3209 /* ViewController */,
+			);
+			path = ForumVewController;
+			sourceTree = "<group>";
+		};
+		F5A5AACC1D6446B700FF3209 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A5AACD1D6446B700FF3209 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A5AACE1D6446B700FF3209 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAE01D64484B00FF3209 /* FLBForumViewController.h */,
+				F5A5AAE11D64484B00FF3209 /* FLBForumViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5A5AACF1D6446E000FF3209 /* MessageVewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAD01D6446E000FF3209 /* Model */,
+				F5A5AAD11D6446E000FF3209 /* View */,
+				F5A5AAD21D6446E000FF3209 /* ViewController */,
+			);
+			path = MessageVewController;
+			sourceTree = "<group>";
+		};
+		F5A5AAD01D6446E000FF3209 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A5AAD11D6446E000FF3209 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A5AAD21D6446E000FF3209 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAE31D64485A00FF3209 /* FLBMessageViewController.h */,
+				F5A5AAE41D64485A00FF3209 /* FLBMessageViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5A5AAD31D6446FF00FF3209 /* CollectVewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAD41D6446FF00FF3209 /* Model */,
+				F5A5AAD51D6446FF00FF3209 /* View */,
+				F5A5AAD61D6446FF00FF3209 /* ViewController */,
+			);
+			path = CollectVewController;
+			sourceTree = "<group>";
+		};
+		F5A5AAD41D6446FF00FF3209 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A5AAD51D6446FF00FF3209 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A5AAD61D6446FF00FF3209 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5AAE61D64487000FF3209 /* FLBCollectViewController.h */,
+				F5A5AAE71D64487000FF3209 /* FLBCollectViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5A5B29C1D645026002E70FB /* LoginVewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5B29D1D645026002E70FB /* Model */,
+				F5A5B29E1D645026002E70FB /* View */,
+				F5A5B29F1D645026002E70FB /* ViewController */,
+			);
+			path = LoginVewController;
+			sourceTree = "<group>";
+		};
+		F5A5B29D1D645026002E70FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5A5B29E1D645026002E70FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A5B29F1D645026002E70FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A5B2A01D645038002E70FB /* FLBLoginViewController.h */,
+				F5A5B2A11D645038002E70FB /* FLBLoginViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +336,7 @@
 		F5613BF31D60080D0089EA24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FLB;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = fuliba;
 				TargetAttributes = {
@@ -165,7 +370,6 @@
 			files = (
 				F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */,
 				F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */,
-				F5613C091D60080D0089EA24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,23 +428,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5613C061D60080D0089EA24 /* ViewController.m in Sources */,
+				F5A5AADC1D64482400FF3209 /* FLBBaseViewController.m in Sources */,
 				F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */,
+				F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */,
+				F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */,
+				F5A5AAE81D64487000FF3209 /* FLBCollectViewController.m in Sources */,
+				F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */,
+				F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */,
 				F5613C001D60080D0089EA24 /* main.m in Sources */,
+				F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */,
+				F5A5AAD91D64475500FF3209 /* FLBTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5613C071D60080D0089EA24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5613C081D60080D0089EA24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +542,7 @@
 			baseConfigurationReference = 4E0992D0D65563B9BFD820DD /* Pods-fuliba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = fuliba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
@@ -351,6 +555,7 @@
 			baseConfigurationReference = ABDC84A3BB53020DB24426A3 /* Pods-fuliba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = fuliba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
