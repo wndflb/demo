@@ -16,9 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadData];
     // Do any additional setup after loading the view.
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+ [self loadData];
+}
+- (void)loadData
+{
+    [FLBNetSDK getRequestUrlStr:@"http://test.wndflb.com/mobcent/app/web/index.php?r=/forum/forumlist" success:^(NSDictionary *requestDic, NSString *msg) {
+        DLog(@"%@",requestDic);
+        
+    } failure:^(NSString *errorinfo) {
+        DLog(@"%@",errorinfo);
 
+    }];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

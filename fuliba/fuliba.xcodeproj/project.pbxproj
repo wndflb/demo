@@ -12,6 +12,8 @@
 		F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C021D60080D0089EA24 /* AppDelegate.m */; };
 		F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0A1D60080D0089EA24 /* Assets.xcassets */; };
 		F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */; };
+		F58AD0C11D670922000D0D44 /* FLBNetSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F58AD0C01D670922000D0D44 /* FLBNetSDK.m */; };
+		F58AD0C41D670941000D0D44 /* FLBNetClick.m in Sources */ = {isa = PBXBuildFile; fileRef = F58AD0C31D670941000D0D44 /* FLBNetClick.m */; };
 		F59078D41D669FE600253776 /* YYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F59078D31D669FE600253776 /* YYRefreshHeader.m */; };
 		F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F59078D61D66A63400253776 /* YYRefreshFooter.m */; };
 		F5A5AAD91D64475500FF3209 /* FLBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */; };
@@ -37,6 +39,10 @@
 		F5613C0D1D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5613C0F1D60080D0089EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58AD0B31D66A74C000D0D44 /* YYRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRefresh.h; sourceTree = "<group>"; };
+		F58AD0BF1D670922000D0D44 /* FLBNetSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBNetSDK.h; sourceTree = "<group>"; };
+		F58AD0C01D670922000D0D44 /* FLBNetSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBNetSDK.m; sourceTree = "<group>"; };
+		F58AD0C21D670941000D0D44 /* FLBNetClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBNetClick.h; sourceTree = "<group>"; };
+		F58AD0C31D670941000D0D44 /* FLBNetClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBNetClick.m; sourceTree = "<group>"; };
 		F59078D21D669FE600253776 /* YYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshHeader.h; sourceTree = "<group>"; };
 		F59078D31D669FE600253776 /* YYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshHeader.m; sourceTree = "<group>"; };
 		F59078D51D66A63400253776 /* YYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshFooter.h; sourceTree = "<group>"; };
@@ -139,9 +145,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F58AD0BE1D67086C000D0D44 /* NetWorkTool */ = {
+			isa = PBXGroup;
+			children = (
+				F58AD0BF1D670922000D0D44 /* FLBNetSDK.h */,
+				F58AD0C01D670922000D0D44 /* FLBNetSDK.m */,
+				F58AD0C21D670941000D0D44 /* FLBNetClick.h */,
+				F58AD0C31D670941000D0D44 /* FLBNetClick.m */,
+			);
+			path = NetWorkTool;
+			sourceTree = "<group>";
+		};
 		F59078D01D669F3C00253776 /* CommonTool */ = {
 			isa = PBXGroup;
 			children = (
+				F58AD0BE1D67086C000D0D44 /* NetWorkTool */,
 				F59078D11D669F6200253776 /* YYRefresh */,
 			);
 			path = CommonTool;
@@ -464,12 +482,14 @@
 				F5A5AADC1D64482400FF3209 /* FLBBaseViewController.m in Sources */,
 				F5A5B2A51D64512E002E70FB /* FLBBaseModel.m in Sources */,
 				F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */,
+				F58AD0C41D670941000D0D44 /* FLBNetClick.m in Sources */,
 				F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */,
 				F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */,
 				F5A5AAE81D64487000FF3209 /* FLBCollectViewController.m in Sources */,
 				F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */,
 				F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */,
 				F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */,
+				F58AD0C11D670922000D0D44 /* FLBNetSDK.m in Sources */,
 				F5613C001D60080D0089EA24 /* main.m in Sources */,
 				F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */,
 				F59078D41D669FE600253776 /* YYRefreshHeader.m in Sources */,
