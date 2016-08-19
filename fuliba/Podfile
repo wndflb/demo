@@ -4,4 +4,5 @@ platform:ios, ‘8.0’
 
 target “fuliba” do
     pod 'LKDBHelper'
+    pod 'MJRefresh'
 end

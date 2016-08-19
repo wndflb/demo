@@ -12,6 +12,8 @@
 		F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5613C021D60080D0089EA24 /* AppDelegate.m */; };
 		F5613C0B1D60080D0089EA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0A1D60080D0089EA24 /* Assets.xcassets */; };
 		F5613C0E1D60080D0089EA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5613C0C1D60080D0089EA24 /* LaunchScreen.storyboard */; };
+		F59078D41D669FE600253776 /* YYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F59078D31D669FE600253776 /* YYRefreshHeader.m */; };
+		F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F59078D61D66A63400253776 /* YYRefreshFooter.m */; };
 		F5A5AAD91D64475500FF3209 /* FLBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */; };
 		F5A5AADC1D64482400FF3209 /* FLBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AADB1D64482400FF3209 /* FLBBaseViewController.m */; };
 		F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AADE1D64483800FF3209 /* FLBMyViewController.m */; };
@@ -34,6 +36,11 @@
 		F5613C0A1D60080D0089EA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5613C0D1D60080D0089EA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5613C0F1D60080D0089EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58AD0B31D66A74C000D0D44 /* YYRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRefresh.h; sourceTree = "<group>"; };
+		F59078D21D669FE600253776 /* YYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshHeader.h; sourceTree = "<group>"; };
+		F59078D31D669FE600253776 /* YYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshHeader.m; sourceTree = "<group>"; };
+		F59078D51D66A63400253776 /* YYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshFooter.h; sourceTree = "<group>"; };
+		F59078D61D66A63400253776 /* YYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshFooter.m; sourceTree = "<group>"; };
 		F5A5AAD71D64475500FF3209 /* FLBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBTabBarViewController.h; sourceTree = "<group>"; };
 		F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBTabBarViewController.m; sourceTree = "<group>"; };
 		F5A5AADA1D64482400FF3209 /* FLBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBaseViewController.h; sourceTree = "<group>"; };
@@ -106,6 +113,7 @@
 		F5613BFD1D60080D0089EA24 /* fuliba */ = {
 			isa = PBXGroup;
 			children = (
+				F59078D01D669F3C00253776 /* CommonTool */,
 				F5A5B29C1D645026002E70FB /* LoginVewController */,
 				F5A5AAD31D6446FF00FF3209 /* CollectVewController */,
 				F5A5AACF1D6446E000FF3209 /* MessageVewController */,
@@ -129,6 +137,26 @@
 				F5613BFF1D60080D0089EA24 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F59078D01D669F3C00253776 /* CommonTool */ = {
+			isa = PBXGroup;
+			children = (
+				F59078D11D669F6200253776 /* YYRefresh */,
+			);
+			path = CommonTool;
+			sourceTree = "<group>";
+		};
+		F59078D11D669F6200253776 /* YYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F59078D21D669FE600253776 /* YYRefreshHeader.h */,
+				F59078D31D669FE600253776 /* YYRefreshHeader.m */,
+				F59078D51D66A63400253776 /* YYRefreshFooter.h */,
+				F59078D61D66A63400253776 /* YYRefreshFooter.m */,
+				F58AD0B31D66A74C000D0D44 /* YYRefresh.h */,
+			);
+			path = YYRefresh;
 			sourceTree = "<group>";
 		};
 		F5A5AAC61D64465000FF3209 /* Common */ = {
@@ -439,10 +467,12 @@
 				F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */,
 				F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */,
 				F5A5AAE81D64487000FF3209 /* FLBCollectViewController.m in Sources */,
+				F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */,
 				F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */,
 				F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */,
 				F5613C001D60080D0089EA24 /* main.m in Sources */,
 				F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */,
+				F59078D41D669FE600253776 /* YYRefreshHeader.m in Sources */,
 				F5A5AAD91D64475500FF3209 /* FLBTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
