@@ -28,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ADB25371D699317008318E7 /* InterfaceUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InterfaceUrl.h; path = InterfaceURL/InterfaceUrl.h; sourceTree = "<group>"; };
+		1ADB25381D6993F9008318E7 /* DebugInterfaceUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DebugInterfaceUrl.h; path = InterfaceURL/DebugInterfaceUrl.h; sourceTree = "<group>"; };
+		1ADB25391D699412008318E7 /* ReleaseInterfaceUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReleaseInterfaceUrl.h; path = InterfaceURL/ReleaseInterfaceUrl.h; sourceTree = "<group>"; };
 		4E0992D0D65563B9BFD820DD /* Pods-fuliba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuliba.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fuliba/Pods-fuliba.debug.xcconfig"; sourceTree = "<group>"; };
 		68E06A8F81B64CAA7CFC32ED /* libPods-fuliba.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fuliba.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDC84A3BB53020DB24426A3 /* Pods-fuliba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuliba.release.xcconfig"; path = "Pods/Target Support Files/Pods-fuliba/Pods-fuliba.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ADB25361D6992A1008318E7 /* InterfaceURL */ = {
+			isa = PBXGroup;
+			children = (
+				1ADB25371D699317008318E7 /* InterfaceUrl.h */,
+				1ADB25381D6993F9008318E7 /* DebugInterfaceUrl.h */,
+				1ADB25391D699412008318E7 /* ReleaseInterfaceUrl.h */,
+			);
+			name = InterfaceURL;
+			sourceTree = "<group>";
+		};
 		B306DE07D06992A73F9CF831 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +193,7 @@
 		F5A5AAC61D64465000FF3209 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1ADB25361D6992A1008318E7 /* InterfaceURL */,
 				F5A5AAD71D64475500FF3209 /* FLBTabBarViewController.h */,
 				F5A5AAD81D64475500FF3209 /* FLBTabBarViewController.m */,
 				F5A5AADA1D64482400FF3209 /* FLBBaseViewController.h */,

@@ -8,19 +8,19 @@
 
 #import "FLBMyViewController.h"
 #import "YYRefresh.h"
+
 @interface FLBMyViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)UITableView *tableView;
 @end
 
 @implementation FLBMyViewController
+static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
-    // Do any additional setup after loading the view.
 }
 
-static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 - (void)createUI
 {
     _tableView =[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -40,16 +40,13 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
         [_tableView.mj_footer endRefreshing];
     } ];
 }
+
 #pragma mark - UITableViewDataSource
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
 }
-
-
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -69,20 +66,5 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -25,7 +25,7 @@
 }
 - (void)loadData
 {
-    [FLBNetSDK getRequestUrlStr:@"http://test.wndflb.com/mobcent/app/web/index.php?r=/forum/forumlist" success:^(NSDictionary *requestDic, NSString *msg) {
+    [FLBNetSDK getRequestUrlStr:FORUM_Index_URL success:^(NSDictionary *requestDic, NSString *msg) {
         DLog(@"%@",requestDic);
         
     } failure:^(NSString *errorinfo) {
