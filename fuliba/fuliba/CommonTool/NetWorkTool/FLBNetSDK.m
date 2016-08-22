@@ -30,8 +30,8 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
 {
     [[self alloc] requestWithUrl:urlStr withDic:nil requestType:RequestTypeGet isCache:NO cacheKey:nil imageKey:nil withData:nil upLoadProgress:nil success:^(NSDictionary *requestDic, NSString *msg) {
         success(requestDic,msg );
-    } failure:^(NSString *errorInfo) {
-        failure(errorInfo);
+    } failure:^(NSString *errorCode,NSDictionary *errorInfo) {
+        failure(errorCode,errorInfo);
     }];
 }
 
@@ -43,8 +43,8 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
     
     [[self alloc] requestWithUrl:urlStr withDic:parameters requestType:RequestTypePost isCache:NO cacheKey:urlStr imageKey:nil withData:nil upLoadProgress:nil success:^(NSDictionary *requestDic, NSString *msg){
         success(requestDic,msg);
-    } failure:^(NSString *errorInfo) {
-        failure(errorInfo);
+    } failure:^(NSString *errorCode,NSDictionary *errorInfo) {
+         failure(errorCode,errorInfo);
     }];
 }
 
@@ -71,7 +71,7 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
         DLog(@"%@",responseObject);
         success(myResult,@"");
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(@"上传失败");
+        failure(@"上传失败",nil);
     }];
     
 }
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
     url =[url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     //进行网络检查
     if (![self isConnectionAvailable]) {
-        failure(@"没有网络");
+        failure(@"没有网络",nil);
         return;
     }
     FLBNetClick *session = [FLBNetClick sharedClient];
@@ -95,12 +95,13 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
             
             [self returnDataWithRequestData:responseObject Success:^(NSDictionary *requestDic, NSString *msg) {
                 success(requestDic,msg );
-            } failure:^(NSString *errorinfo) {
-                failure(errorinfo);
+            } failure:^(NSString *errorCode,NSDictionary *errorInfo) {
+                 failure(errorCode,errorInfo);
+;
             }];
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            failure(@"没有网络");
+            failure(@"没有网络",nil);
         }];
         
     }
@@ -117,14 +118,14 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
             [self returnDataWithRequestData:responseObject Success:^(NSDictionary *requestDic, NSString *msg) {
                 success(requestDic,msg );
                 
-            } failure:^(NSString *errorinfo) {
-                failure(errorinfo);
+            } failure:^(NSString *errorCode,NSDictionary *errorInfo) {
+                 failure(errorCode,errorInfo);
                 
             }];
             
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            failure(@"网络错误");
+            failure(@"网络错误",nil);
         }];
     }
     
@@ -147,13 +148,13 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
             [self returnDataWithRequestData:responseObject Success:^(NSDictionary *requestDic, NSString *msg) {
                 success(requestDic,msg );
                 
-            } failure:^(NSString *errorinfo) {
-                failure(errorinfo);
+            } failure:^(NSString *errorCode,NSDictionary *errorInfo) {
+                 failure(errorCode,errorInfo);
                 
             }];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
-            failure(@"出现错误了");
+            failure(@"出现错误了",nil);
         }];
         //下载
         if (requestType ==RequestTypeDownload) {
@@ -211,18 +212,18 @@ typedef NS_ENUM(NSInteger,JDRequsetType){
         NSDictionary *  requestDic = (NSDictionary *)myResult;
         
         //根据返回的接口内容来变
-        int  succ = [requestDic[@"state"] intValue];
+        int  succ = [requestDic[@"rs"] intValue];
         if (succ == 1) {
             success(requestDic,requestDic[@"msg"]);
         }else{
-            failure(requestDic[@"msg"]);
+            failure(requestDic[@"errcode"],requestDic[@"head"]);
         }
     }
     else
     {
-        DLog(@"后台返回数据错误!!!!------%@",requestData);
-        DLog(@"后台返回数据错误!!!!------%@",requestData);
-        DLog(@"后台返回数据错误!!!!------%@",requestData);
+        DLog(@"后台返回数据格式错误!!!!------%@",requestData);
+        DLog(@"后台返回数据格式错误!!!!------%@",requestData);
+        DLog(@"后台返回数据格式错误!!!!------%@",requestData);
     }
 }
 

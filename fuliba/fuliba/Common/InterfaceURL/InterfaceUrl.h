@@ -7,13 +7,6 @@
 //
 
 /// 接口地址
-#if DEBUG
+#define FORUM_Index_URL @"/mobcent/app/web/index.php?r=/forum/forumlist"
 
-#import "DebugInterfaceUrl.h" // 测试地址
-
-#else
-
-#import "ReleaseInterfaceUrl.h" // 发布地址
-
-#endif
 

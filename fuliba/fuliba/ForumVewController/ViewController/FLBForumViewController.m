@@ -28,9 +28,8 @@
     [FLBNetSDK getRequestUrlStr:FORUM_Index_URL success:^(NSDictionary *requestDic, NSString *msg) {
         DLog(@"%@",requestDic);
         
-    } failure:^(NSString *errorinfo) {
-        DLog(@"%@",errorinfo);
-
+    } failure:^(NSString *errorCode, NSDictionary *errorInfo) {
+        
     }];
 
 }

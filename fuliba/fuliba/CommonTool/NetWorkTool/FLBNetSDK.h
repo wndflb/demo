@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^SuccessBlock)(NSDictionary *requestDic,NSString *msg);
-typedef void (^FailureBlock)(NSString *errorinfo);
+typedef void (^FailureBlock)(NSString *errorCode,NSDictionary *errorInfo);
 typedef void (^loadProgress)(float progress);
 
 @interface FLBNetSDK : NSObject
