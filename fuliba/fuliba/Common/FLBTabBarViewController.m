@@ -63,8 +63,8 @@
     
     
     
-    NSArray *unSelectArray = @[@"firstNomal",@"messegeNomal", @"guangjieNomal",@"nearbyNomal",@"myselfNomal"];
-    NSArray *selectArray  = @[@"firstSelect",@"messegeSelect", @"guangjieSelect",@"nearbySelect",@"myselfSelect"];
+    NSArray *unSelectArray = @[@"form_nomal",@"message_nomal", @"colect_nomal",@"my_nomal"];
+    NSArray *selectArray  = @[@"form_select",@"message_select", @"colect_select",@"my_select"];
     
     NSArray *allItems=self.tabBar.items;
     
