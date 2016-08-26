@@ -9,6 +9,7 @@
 #import "FLBForumViewController.h"
 #import "MJExtension.h"
 #import "FLBBoardModel.h"
+#import "FLBBoardCategoryModel.h"
 
 @interface FLBForumViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray *boardArray;
@@ -33,7 +34,7 @@
     [FLBNetSDK getRequestUrlStr:FORUM_Index_URL success:^(NSDictionary *requestDic, NSString *msg) {
         DLog(@"%@",requestDic);
         for (NSDictionary *dic in requestDic[@"list"]) {
-            FLBBoardModel *model =[[FLBBoardModel alloc]init];
+            FLBBoardCategoryModel *model =[[FLBBoardCategoryModel alloc]init];
             [model mj_setKeyValues:dic];
             [_boardArray addObject:model];
         }
@@ -61,7 +62,7 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    FLBBoardModel *model =[_boardArray objectAtIndex:section];
+    FLBBoardCategoryModel *model =[_boardArray objectAtIndex:section];
     return model.board_list.count;
 }
 
@@ -71,7 +72,7 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    FLBBoardModel *model =[_boardArray objectAtIndex:section];
+    FLBBoardCategoryModel *model =[_boardArray objectAtIndex:section];
     return model.board_category_name;
 }
 
@@ -80,10 +81,10 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell =[_tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    FLBBoardModel *model =[_boardArray objectAtIndex:indexPath.section];
-    
-    cell.textLabel.text =[model.board_list objectAtIndex:indexPath.row][@"board_name"];
-    cell.imageView.image =[UIImage imageNamed:[model.board_list objectAtIndex:indexPath.row][@"board_img"]];
+    FLBBoardCategoryModel *model =[_boardArray objectAtIndex:indexPath.section];
+    FLBBoardModel *boardModel =[model.board_list objectAtIndex:indexPath.row];
+    cell.textLabel.text =boardModel.board_name;
+    cell.imageView.image =[UIImage imageNamed:boardModel.board_img];
     return cell;
 }
 
