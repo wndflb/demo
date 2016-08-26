@@ -7,45 +7,99 @@
 //
 
 #import "FLBForumViewController.h"
+#import "MJExtension.h"
+#import "FLBBoardModel.h"
 
-@interface FLBForumViewController ()
-
+@interface FLBForumViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong)NSMutableArray *boardArray;
+@property(nonatomic,copy)NSString *online_user_num;    //在线人数
+@property(nonatomic,copy)NSString *td_visitors;        //访客人数
+@property(nonatomic,retain)UITableView *tableView;
 @end
 
 @implementation FLBForumViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _boardArray =[NSMutableArray array];
+    [self createUI];
     [self loadData];
-    // Do any additional setup after loading the view.
+    
 }
-- (void)viewWillAppear:(BOOL)animated
-{
- [self loadData];
-}
+
 - (void)loadData
 {
+    [_boardArray removeAllObjects];
     [FLBNetSDK getRequestUrlStr:FORUM_Index_URL success:^(NSDictionary *requestDic, NSString *msg) {
         DLog(@"%@",requestDic);
+        for (NSDictionary *dic in requestDic[@"list"]) {
+            FLBBoardModel *model =[[FLBBoardModel alloc]init];
+            [model mj_setKeyValues:dic];
+            [_boardArray addObject:model];
+        }
+        [_tableView reloadData];
         
     } failure:^(NSString *errorCode, NSDictionary *errorInfo) {
-        
+        DLog(@"%@",errorCode);
     }];
-
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
+- (void)createUI
+{
+    _tableView =[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:tableViewCellIdentifer];
+    _tableView.tableFooterView =[[UIView alloc]init];
+    _tableView.delegate =self;
+    _tableView.dataSource =self;
+    [self.view addSubview:_tableView];
 }
-*/
+#pragma mark - UITableViewDataSource
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    FLBBoardModel *model =[_boardArray objectAtIndex:section];
+    return model.board_list.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return _boardArray.count;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    FLBBoardModel *model =[_boardArray objectAtIndex:section];
+    return model.board_category_name;
+}
+
+
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell =[_tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
+    FLBBoardModel *model =[_boardArray objectAtIndex:indexPath.section];
+    
+    cell.textLabel.text =[model.board_list objectAtIndex:indexPath.row][@"board_name"];
+    cell.imageView.image =[UIImage imageNamed:[model.board_list objectAtIndex:indexPath.row][@"board_img"]];
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70.f;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
 
 @end

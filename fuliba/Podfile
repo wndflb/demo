@@ -7,4 +7,5 @@ target “fuliba” do
     pod 'MJRefresh'
     pod 'AFNetworking'
     pod 'Reachability'
+    pod 'MJExtension'
 end

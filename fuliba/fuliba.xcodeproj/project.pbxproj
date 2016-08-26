@@ -25,6 +25,7 @@
 		F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5AAED1D644B5000FF3209 /* FLBNavigationController.m */; };
 		F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5B2A11D645038002E70FB /* FLBLoginViewController.m */; };
 		F5A5B2A51D64512E002E70FB /* FLBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5B2A41D64512E002E70FB /* FLBBaseModel.m */; };
+		F5D49A611D7030F700D0AD19 /* FLBBoardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D49A601D7030F700D0AD19 /* FLBBoardModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		F5A5B2A11D645038002E70FB /* FLBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBLoginViewController.m; sourceTree = "<group>"; };
 		F5A5B2A31D64512E002E70FB /* FLBBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBaseModel.h; sourceTree = "<group>"; };
 		F5A5B2A41D64512E002E70FB /* FLBBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBaseModel.m; sourceTree = "<group>"; };
+		F5D49A5F1D7030F700D0AD19 /* FLBBoardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBoardModel.h; sourceTree = "<group>"; };
+		F5D49A601D7030F700D0AD19 /* FLBBoardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBoardModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 		F5A5AACC1D6446B700FF3209 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5D49A5F1D7030F700D0AD19 /* FLBBoardModel.h */,
+				F5D49A601D7030F700D0AD19 /* FLBBoardModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */,
 				F5A5B2A21D645038002E70FB /* FLBLoginViewController.m in Sources */,
 				F5A5AAE81D64487000FF3209 /* FLBCollectViewController.m in Sources */,
+				F5D49A611D7030F700D0AD19 /* FLBBoardModel.m in Sources */,
 				F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */,
 				F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */,
 				F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */,
@@ -614,6 +620,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -628,6 +635,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuliba.fuliba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
