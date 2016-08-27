@@ -10,6 +10,7 @@
 #import "MJExtension.h"
 #import "FLBBoardModel.h"
 #import "FLBBoardCategoryModel.h"
+#import "FLBBBSListViewController.h"
 
 @interface FLBForumViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray *boardArray;
@@ -81,8 +82,7 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell =[_tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifer];
-    FLBBoardCategoryModel *model =[_boardArray objectAtIndex:indexPath.section];
-    FLBBoardModel *boardModel =[model.board_list objectAtIndex:indexPath.row];
+    FLBBoardModel *boardModel =[self getBoardModelbyIndex:indexPath];
     cell.textLabel.text =boardModel.board_name;
     cell.imageView.image =[UIImage imageNamed:boardModel.board_img];
     return cell;
@@ -98,7 +98,19 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    FLBBoardModel *boardModel =[self getBoardModelbyIndex:indexPath];
+    FLBBBSListViewController *bvc =[[FLBBBSListViewController alloc]init];
+    bvc.boardID = boardModel.board_id;
+    bvc.hidesBottomBarWhenPushed =YES;
+    [self.navigationController pushViewController:bvc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+- (FLBBoardModel *)getBoardModelbyIndex:(NSIndexPath *)indexPath
+{
+    FLBBoardCategoryModel *model =[_boardArray objectAtIndex:indexPath.section];
+    FLBBoardModel *boardModel =[model.board_list objectAtIndex:indexPath.row];
+    return boardModel;
 }
 
 

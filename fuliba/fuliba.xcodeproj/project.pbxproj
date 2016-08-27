@@ -27,6 +27,8 @@
 		F5A5B2A51D64512E002E70FB /* FLBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5B2A41D64512E002E70FB /* FLBBaseModel.m */; };
 		F5D49A611D7030F700D0AD19 /* FLBBoardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D49A601D7030F700D0AD19 /* FLBBoardModel.m */; };
 		F5D49A671D7041F600D0AD19 /* FLBBoardCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D49A661D7041F600D0AD19 /* FLBBoardCategoryModel.m */; };
+		F5F4CC751D712CF500115BA1 /* FLBBBSListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F4CC741D712CF500115BA1 /* FLBBBSListViewController.m */; };
+		F5F4CC781D71317800115BA1 /* FLBBBSListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F4CC771D71317800115BA1 /* FLBBBSListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,10 @@
 		F5D49A601D7030F700D0AD19 /* FLBBoardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBoardModel.m; sourceTree = "<group>"; };
 		F5D49A651D7041F600D0AD19 /* FLBBoardCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBoardCategoryModel.h; sourceTree = "<group>"; };
 		F5D49A661D7041F600D0AD19 /* FLBBoardCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBoardCategoryModel.m; sourceTree = "<group>"; };
+		F5F4CC731D712CF500115BA1 /* FLBBBSListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBBSListViewController.h; sourceTree = "<group>"; };
+		F5F4CC741D712CF500115BA1 /* FLBBBSListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBBSListViewController.m; sourceTree = "<group>"; };
+		F5F4CC761D71317800115BA1 /* FLBBBSListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBBBSListModel.h; sourceTree = "<group>"; };
+		F5F4CC771D71317800115BA1 /* FLBBBSListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBBBSListModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +251,7 @@
 		F5A5AACB1D6446B700FF3209 /* ForumVewController */ = {
 			isa = PBXGroup;
 			children = (
+				F5F4CC6F1D712CC700115BA1 /* BBSListController */,
 				F5A5AACC1D6446B700FF3209 /* Model */,
 				F5A5AACD1D6446B700FF3209 /* View */,
 				F5A5AACE1D6446B700FF3209 /* ViewController */,
@@ -378,6 +385,41 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		F5F4CC6F1D712CC700115BA1 /* BBSListController */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4CC701D712CC700115BA1 /* Model */,
+				F5F4CC711D712CC700115BA1 /* View */,
+				F5F4CC721D712CC700115BA1 /* ViewController */,
+			);
+			path = BBSListController;
+			sourceTree = "<group>";
+		};
+		F5F4CC701D712CC700115BA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4CC761D71317800115BA1 /* FLBBBSListModel.h */,
+				F5F4CC771D71317800115BA1 /* FLBBBSListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5F4CC711D712CC700115BA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5F4CC721D712CC700115BA1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4CC731D712CF500115BA1 /* FLBBBSListViewController.h */,
+				F5F4CC741D712CF500115BA1 /* FLBBBSListViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,6 +544,7 @@
 				F5A5AADC1D64482400FF3209 /* FLBBaseViewController.m in Sources */,
 				F5D49A671D7041F600D0AD19 /* FLBBoardCategoryModel.m in Sources */,
 				F5A5B2A51D64512E002E70FB /* FLBBaseModel.m in Sources */,
+				F5F4CC751D712CF500115BA1 /* FLBBBSListViewController.m in Sources */,
 				F5613C031D60080D0089EA24 /* AppDelegate.m in Sources */,
 				F58AD0C41D670941000D0D44 /* FLBNetClick.m in Sources */,
 				F5A5AADF1D64483800FF3209 /* FLBMyViewController.m in Sources */,
@@ -511,6 +554,7 @@
 				F59078D71D66A63400253776 /* YYRefreshFooter.m in Sources */,
 				F5A5AAE21D64484B00FF3209 /* FLBForumViewController.m in Sources */,
 				F5A5AAE51D64485A00FF3209 /* FLBMessageViewController.m in Sources */,
+				F5F4CC781D71317800115BA1 /* FLBBBSListModel.m in Sources */,
 				F58AD0C11D670922000D0D44 /* FLBNetSDK.m in Sources */,
 				F5613C001D60080D0089EA24 /* main.m in Sources */,
 				F5A5AAEE1D644B5000FF3209 /* FLBNavigationController.m in Sources */,
