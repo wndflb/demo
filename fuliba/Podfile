@@ -8,4 +8,5 @@ target “fuliba” do
     pod 'AFNetworking'
     pod 'Reachability'
     pod 'MJExtension'
+    pod 'SDWebImage'
 end

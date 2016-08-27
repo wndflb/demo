@@ -9,6 +9,7 @@
 #import "FLBBBSListViewController.h"
 #import "FLBBBSListModel.h"
 #import "MJExtension.h"
+
 @interface FLBBBSListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray *BBSListArray;
 @property(nonatomic,retain)UITableView *tableView;
@@ -80,6 +81,8 @@ static NSString *tableViewCellIdentifer = @"HYHActiveSignUpListTableViewCellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    FLBBBSListModel *model =[_BBSListArray objectAtIndex:indexPath.row];
+
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 

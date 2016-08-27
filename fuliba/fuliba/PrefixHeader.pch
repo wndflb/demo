@@ -16,7 +16,7 @@
 #import "FLBDefine.h"
 #import "FLBNetSDK.h"
 #import "FLBBaseModel.h"
-
+#import "UIImageView+WebCache.h"
 #endif
 
 

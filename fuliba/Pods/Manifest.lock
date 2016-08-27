@@ -17,11 +17,14 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - LKDBHelper (2.3.3):
+  - LKDBHelper (2.3.4):
     - FMDB
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - Reachability (3.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -29,15 +32,17 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - Reachability
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  LKDBHelper: 328c5efe643c0179e95f607a2f31bb4bba79e69f
+  LKDBHelper: 21fed3d2a010ea6f97996490abd717d379f9c772
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: 63886360e1936e32d4c181c4306f501a3e8b618e
+PODFILE CHECKSUM: ddd3e5426d5d6fe1530169432a3733469f5b980b
 
 COCOAPODS: 1.0.1
